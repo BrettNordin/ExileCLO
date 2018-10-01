@@ -12,8 +12,8 @@ _mobilexm8slide = {
 			_ctrl ctrlSetText "Sphub Xm8";
 			_ctrl ctrlSetEventHandler ["ButtonClick","call Sphub_MobileXm8;"];
 			_ctrl ctrlCommit 0;
+		};
 	};
-};
 	if(!isNil"sphub_eclo")then{[sphub_eclo] call ExileClient_system_thread_removeTask;sphub_eclo=nil;};
 	sphub_eclo = [0.1, _code, [], true] call ExileClient_system_thread_addtask;
 };
