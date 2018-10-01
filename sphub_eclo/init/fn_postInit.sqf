@@ -9,6 +9,7 @@ _mobilexm8slide = {
 		{
       _ctrl = _display displayCtrl 1104;
 			_ctrl ctrlRemoveAllEventHandlers "ButtonClick";
+			_ctrl ctrlSetText "Sphub Xm8";
 			_ctrl ctrlSetEventHandler ["ButtonClick","call Sphub_MobileXm8;"];
 			_ctrl ctrlCommit 0;
 	};
