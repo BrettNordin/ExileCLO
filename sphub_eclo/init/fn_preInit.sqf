@@ -1,8 +1,6 @@
 _mobilexm8slide = {
 	waitUntil{getClientStateNumber >= 10 && !isNull findDisplay 46 && !isNil "ExileClientLoadedIn"};
 	uiSleep 3;
-	if(isNil"customAppBTNs")then{customAppBTNs = [];};
-	if(isNil"customAppIDCs")then{customAppIDCs = [];};
 	_code = {
 		_display = uiNamespace getVariable ["RscExileXM8", displayNull];
 		if(!isNull _display)then
